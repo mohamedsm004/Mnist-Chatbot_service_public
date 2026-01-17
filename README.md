@@ -30,7 +30,7 @@ Important : Vous devez d'abord entraîner le modèle avant de lancer l'interface
   
 Étape 2 (Interface) :
 * streamlit run app.py
-### Technologies :
+### Technologies
 ***
 * Deep Learning : Keras / TensorFlow
 
