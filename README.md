@@ -2,7 +2,7 @@
 Ce projet a été réalisé dans le cadre de ma formation à l'*ENSA Berrechid*. Il se compose de deux parties majeures utilisant le Deep Learning :
   1.  *Un Chatbot Intelligent* : Assistant administratif pour les démarches en mairie.
   2.  *Reconnaissance de Chiffres (MNIST)* : Une interface de dessin pour tester un réseau de neurones convolutif (CNN).
-## Table of Contents
+## Table des matières
 1. [Partie 1](#partie-1)
 2. [Partie 2](#partie-1)
 3. [Technologies](#technologies)
