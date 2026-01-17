@@ -1,0 +1,334 @@
+{
+  "intents": [
+    {
+      "tag": "salutation",
+      "patterns": [
+        "Bonjour", "Salut", "Bonsoir", "Coucou", "Allô", "Bonjour monsieur",
+        "Bonjour madame", "Salut, y a quelqu’un ?", "Est-ce que quelqu’un est là ?",
+        "Hello", "Hey", "Yo", "Bonjour, comment ça va ?", "Salut, comment allez-vous ?",
+        "Bonsoir, j’ai une question", "Bonjour service public", "Démarrer"
+      ],
+      "responses": [
+        "Bonjour 👋 Comment puis-je vous aider dans vos démarches ?",
+        "Salut ! Je suis l'assistant virtuel du service public. Quelle est votre demande ?",
+        "Bonsoir ! En quoi puis-je vous assister aujourd'hui ?",
+        "Bienvenue. Je peux vous renseigner sur l'état civil, l'urbanisme, l'école, etc."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "au_revoir",
+      "patterns": [
+        "Au revoir", "À bientôt", "À plus tard", "Bonne journée", "Bonne soirée",
+        "Merci, au revoir", "C’est tout pour moi", "À la prochaine", "Bye",
+        "Je quitte", "Fin de la discussion"
+      ],
+      "responses": [
+        "Au revoir ! Bonne journée 😊",
+        "À bientôt, n’hésitez pas à revenir vers nous.",
+        "Bonne continuation dans vos démarches !",
+        "Merci de nous avoir contactés. Le service public reste à votre écoute."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "remerciement",
+      "patterns": [
+        "Merci", "Merci beaucoup", "Je vous remercie", "Merci pour votre aide",
+        "C’est très utile", "Parfait merci", "Merci infiniment", "C'est gentil", "Top merci"
+      ],
+      "responses": [
+        "Je vous en prie 🙂",
+        "Avec plaisir !",
+        "Ravi d’avoir pu vous aider.",
+        "N’hésitez pas si vous avez d’autres questions."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "horaires_service",
+      "patterns": [
+        "Quels sont les horaires", "Horaires d’ouverture", "Vous ouvrez à quelle heure",
+        "Quand est-ce que le bureau est ouvert", "Heures de travail",
+        "Le service est-il ouvert aujourd’hui", "Fermeture mairie", "Ouverture préfecture"
+      ],
+      "responses": [
+        "Nos services sont ouverts du lundi au vendredi de 8h30 à 12h00 et de 13h30 à 17h00.",
+        "L'accueil est ouvert en semaine de 08h30 à 17h00. Une permanence est assurée le samedi matin pour l'état civil."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "localisation",
+      "patterns": [
+        "Où se trouve le bureau", "Adresse du service", "Localisation",
+        "Où est la mairie", "Adresse administrative", "Comment venir",
+        "Plan d'accès", "C'est où ?"
+      ],
+      "responses": [
+        "Nous sommes situés au 1 Place de la République, 75000 Ville-Exemple.",
+        "L'hôtel de ville se trouve au centre-ville, près de la poste."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "contact",
+      "patterns": [
+        "Comment vous contacter", "Numéro de téléphone", "Email",
+        "Contact service public", "Joindre un agent", "Avez-vous un mail ?",
+        "Je veux appeler"
+      ],
+      "responses": [
+        "Standard téléphonique : 01.23.45.67.89. Email : contact@service-public.fr",
+        "Vous pouvez nous joindre par téléphone ou via le formulaire de contact sur notre site internet."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "rendez_vous",
+      "patterns": [
+        "Faut-il un rendez-vous", "Prendre rendez-vous", "Comment réserver",
+        "Rendez-vous obligatoire", "Réservation en ligne", "Je veux un RDV",
+        "Prendre date"
+      ],
+      "responses": [
+        "La prise de rendez-vous est obligatoire pour les passeports et CNI. Elle se fait directement sur notre site web.",
+        "Vous pouvez réserver un créneau en ligne ou appeler le secrétariat pour les urgences."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "passeport",
+      "patterns": [
+        "Documents pour passeport", "Comment faire un passeport", "Dossier passeport",
+        "Demande de passeport", "Renouveler passeport", "Prix passeport",
+        "Timbre fiscal passeport", "Voyage passeport"
+      ],
+      "responses": [
+        "Pour le passeport : pré-demande ANTS, 1 photo, justificatif domicile, timbre fiscal (86€ adulte) et pièce d'identité.",
+        "Le dépôt du dossier de passeport se fait uniquement sur rendez-vous. La présence du demandeur est obligatoire."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "carte_identite",
+      "patterns": [
+        "Documents pour carte d’identité", "Refaire carte nationale",
+        "Carte d’identité perdue", "Nouvelle carte d’identité", "Dossier CIN",
+        "CNI périmée", "Carte identité volée"
+      ],
+      "responses": [
+        "Pour une CNI : 1 photo, justificatif domicile (-3 mois) et ancienne carte. En cas de perte, ajoutez 25€ de timbre fiscal.",
+        "La carte d'identité est gratuite (sauf perte/vol). Faites votre pré-demande sur le site de l'ANTS avant de venir."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "acte_naissance",
+      "patterns": [
+        "Demande d’acte de naissance", "Comment obtenir un acte de naissance",
+        "Extrait de naissance", "Copie intégrale naissance", "Acte état civil",
+        "Naissance filiation"
+      ],
+      "responses": [
+        "L’acte de naissance se demande à la mairie du lieu de naissance ou sur service-public.fr.",
+        "C'est gratuit. Si vous êtes né ici, présentez-vous à l'accueil avec une pièce d'identité."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "mariage",
+      "patterns": [
+        "Je veux me marier", "Dossier de mariage", "Quels papiers pour le mariage",
+        "Célébration mariage", "Publication des bans", "Date mariage", "Se marier mairie"
+      ],
+      "responses": [
+        "Félicitations ! Retirez le dossier de mariage au service État Civil. Il doit être déposé 2 mois avant la date.",
+        "Pièces : actes de naissance (-3 mois), justificatifs de domicile, pièces d'identité des futurs époux et témoins."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "pacs",
+      "patterns": [
+        "Je veux me pacser", "Dossier PACS", "Convention de PACS",
+        "Enregistrer un PACS", "Documents pour le PACS", "Partenaire de PACS"
+      ],
+      "responses": [
+        "Le PACS s'enregistre en mairie (lieu de résidence) ou chez un notaire. Il faut une convention et une déclaration conjointe.",
+        "Prenez rendez-vous avec l'officier d'état civil pour l'enregistrement de votre PACS."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "deces",
+      "patterns": [
+        "Déclaration de décès", "Cimetière", "Concession funéraire",
+        "Certificat de décès", "Enterrement", "Obsèques"
+      ],
+      "responses": [
+        "La déclaration de décès doit être faite dans les 24h à la mairie du lieu du décès.",
+        "Pour les affaires de cimetière ou concession, contactez le service funéraire de la mairie."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "famille_scolaire",
+      "patterns": [
+        "Inscription école", "Cantine scolaire", "Crèche",
+        "Inscrire mon enfant", "Garderie périscolaire", "Tarif cantine",
+        "Petite enfance"
+      ],
+      "responses": [
+        "Les inscriptions scolaires et cantine se font au service Education ou sur le Portail Famille en ligne.",
+        "Pour la crèche, retirez un dossier au service Petite Enfance. Les places sont attribuées par commission."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "permis_conduire",
+      "patterns": [
+        "Je veux refaire mon permis", "Permis de conduire perdu", "Solde de points",
+        "Comment passer le permis", "Inscription auto-école", "Permis international"
+      ],
+      "responses": [
+        "Tout se passe sur le site de l'ANTS (permisdeconduire.ants.gouv.fr). La mairie ne délivre plus de permis.",
+        "Pour connaître votre solde de points, connectez-vous au service Télépoints."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "carte_grise",
+      "patterns": [
+        "Je veux faire ma carte grise", "Certificat d'immatriculation",
+        "Changement de titulaire véhicule", "Vendre ma voiture",
+        "Carte grise perdue", "Adresse carte grise"
+      ],
+      "responses": [
+        "Les démarches carte grise se font uniquement en ligne sur le site de l'ANTS (immatriculation.ants.gouv.fr).",
+        "Pour un changement d'adresse ou de propriétaire, tout est dématérialisé. Ne venez pas en préfecture."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "urbanisme",
+      "patterns": [
+        "Je veux construire une maison", "Permis de construire", "Déclaration de travaux",
+        "Plan cadastral", "Règles d'urbanisme", "Installer une piscine",
+        "Agrandir ma maison", "PLU"
+      ],
+      "responses": [
+        "Pour les travaux (piscine, abri, extension), consultez le service Urbanisme. Un permis ou une déclaration est nécessaire.",
+        "Le Plan Local d'Urbanisme (PLU) et le cadastre sont consultables en mairie ou sur geoportail-urbanisme.gouv.fr."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "logement_social",
+      "patterns": [
+        "Demande de logement social", "Dossier HLM", "Demande de logement",
+        "Où déposer ma demande de logement", "Numéro unique logement", "HLM"
+      ],
+      "responses": [
+        "Vous pouvez déposer votre demande de logement social en ligne sur demande-logement-social.gouv.fr.",
+        "Le CCAS peut vous accompagner dans votre demande de logement si vous rencontrez des difficultés."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "elections",
+      "patterns": [
+        "Comment voter", "Je veux m'inscrire sur les listes électorales",
+        "Carte d'électeur", "Où est mon bureau de vote", "Procuration vote",
+        "Elections présidentielles"
+      ],
+      "responses": [
+        "Pour voter, inscrivez-vous sur les listes électorales (en mairie ou sur service-public.fr).",
+        "Si vous ne pouvez pas voter, vous pouvez faire une procuration au commissariat ou en gendarmerie (Maprocuration)."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "impots",
+      "patterns": [
+        "Déclaration impôts", "Payer mes impôts", "Taxe d'habitation",
+        "Taxe foncière", "Centre des finances publiques", "Impôt sur le revenu"
+      ],
+      "responses": [
+        "Pour vos impôts, connectez-vous à votre espace particulier sur impots.gouv.fr.",
+        "La mairie ne gère pas les impôts. Contactez le Centre des Finances Publiques de votre secteur."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "rsa_aides",
+      "patterns": [
+        "Demande de RSA", "Aide sociale", "CAF", "APL", "Besoin d'aide financière",
+        "Assistante sociale", "Prime d'activité"
+      ],
+      "responses": [
+        "Pour le RSA et les aides au logement (APL), contactez la CAF (Caisse d'Allocations Familiales).",
+        "Pour une aide d'urgence, vous pouvez prendre rendez-vous avec une assistante sociale au CCAS de la ville."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "casier_judiciaire",
+      "patterns": [
+        "Extrait de casier judiciaire", "Demande bulletin numéro 3",
+        "Casier judiciaire vierge", "Comment avoir mon casier"
+      ],
+      "responses": [
+        "La demande de casier judiciaire (bulletin n°3) est gratuite et se fait sur casier-judiciaire.justice.gouv.fr.",
+        "Vous recevrez le document par mail en moins d'une heure généralement."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "police_securite",
+      "patterns": [
+        "Porter plainte", "Main courante", "Objet perdu", "Objet trouvé",
+        "Vol de papiers", "Commissariat", "Tapage nocturne"
+      ],
+      "responses": [
+        "Pour porter plainte, rendez-vous au commissariat ou à la gendarmerie. Une pré-plainte en ligne est possible.",
+        "Pour les objets perdus/trouvés, contactez la Police Municipale."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "dechets_encombrants",
+      "patterns": [
+        "Ramassage des poubelles", "Jour de passage poubelle", "J'ai des encombrants",
+        "Déchetterie", "Tri sélectif", "Poubelle jaune", "Vieux meubles"
+      ],
+      "responses": [
+        "Les ordures ménagères sont ramassées selon le calendrier de votre secteur. Les encombrants sont sur rendez-vous.",
+        "L'accès à la déchetterie est gratuit pour les particuliers résidents, sur présentation d'un justificatif."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "animaux",
+      "patterns": [
+        "Chien perdu", "Déclarer un chien dangereux", "Adopter un animal",
+        "Nuisances animales", "Chat errant"
+      ],
+      "responses": [
+        "La détention de chiens de catégorie 1 et 2 doit être déclarée à la Police Municipale.",
+        "Si vous trouvez un animal errant, contactez la mairie ou la fourrière animale."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "incomprehension",
+      "patterns": [],
+      "responses": [
+        "Je n’ai pas bien compris votre demande. Pourriez-vous reformuler ?",
+        "Je suis un assistant administratif, essayez d'utiliser des mots clés comme 'Passeport', 'Mairie' ou 'Élections'.",
+        "Désolé, je ne trouve pas l'information. Pouvez-vous préciser le service concerné ?"
+      ],
+      "context": [""]
+    }
+  ]
+}
